@@ -1,18 +1,20 @@
+/*
+Q5 calculate the income and taxpayable as computed in table.Accept the annual CTC and display the tax amount according to the percentage given.
+*/
 
-import java.util.Scanner;
- class CalculateIncome {
+import java.util.Scanner;							
+ class CalculateIncome {								//main class
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		int annualIncome;
 		int taxPercent;
 		double tax=0;
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter your CTC :");
-		annualIncome = scanner.nextInt();
+		annualIncome = scanner.nextInt();					//taking user input using Scanner class
 	
-		if(annualIncome>0 && annualIncome<180000){
+		if(annualIncome>0 && annualIncome<180000){				// according to the tax percent payable the condition are applied
 			System.out.println("Taxa payable Nil");
 		}
 		else if (annualIncome > 181001 && annualIncome < 300000) {
