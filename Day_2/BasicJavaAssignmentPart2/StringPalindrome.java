@@ -1,22 +1,20 @@
 package day_2;
 
+import java.util.Arrays;
+
 public class StringPalindrome {
 
-	public String[] checkPalindrome(String[] input) {
+	public boolean checkPalindrome(String[] input) {
 		
-		String[] storeString ;
-	   /* for (String n:input)
-	    	storeString+= n;
-	    char[] storeCharArray = storeString.toCharArray();
-		System.out.println(storeCharArray);
-		String reverse=" ";*/
-		for (int countOne = 0 ; countOne <= input.length ; countOne++){
-			if ()
+		int stringLength = input.length;
+		
+		
+		for(int counter=0;counter<stringLength;counter++){
+			
+			
 		}
-		
-		
-		
-		return null;
+		return false;
+
 		
 		
 	}

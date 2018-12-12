@@ -9,9 +9,9 @@ public class StringPalindromeJUnit {
 	@Test
 	public void checkStringPalindrometest() {
 		StringPalindrome stringPalindrome = new StringPalindrome();
-		String[] input = {"nitin"};
-		String[] checkList = {"nitin"};
-		String[] inputlist = stringPalindrome.checkPalindrome(input);
+		String[] input = {"nitin","ankita","malyalam","deepika"};
+		
+		boolean result = stringPalindrome.checkPalindrome(input);
 		//assertEquals();
 	}
 
