@@ -8,10 +8,10 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class DistinctArrayJUnitTest {
+public class DistinctArrayJUnitTest {								 //JUnit Test class to test the cases
 	
-	private DistinctArray distinct;
-	@Before															//
+	private DistinctArray distinct;									//  reference of class created
+	@Before															
 	public void setUp(){
 		distinct = new DistinctArray();
 	}
@@ -21,7 +21,7 @@ public class DistinctArrayJUnitTest {
 		
 		int numberArrayOne[] = {1,2,3,5,6,7};
 		int resultOne = distinct.checkDistinctElement(numberArrayOne);
-		assertEquals(4,resultOne);
+		assertEquals(4,resultOne);									//assertequals to check actual and expected value 
 	}
 	@Test
 	public void testDistinctArrayTwo(){
@@ -37,7 +37,7 @@ public class DistinctArrayJUnitTest {
 		int resultThree = distinct.checkDistinctElement(numberArrayThree);
 		assertEquals(4,resultThree);
 	}
-	public void testDistinctEmptyArray(){
+	public void testDistinctEmptyArray(){					//method test case to check empty string
 		int numberArrayFour[] ={};
 		int resultFour = distinct.checkDistinctElement(numberArrayFour);
 		assertEquals(0,resultFour);

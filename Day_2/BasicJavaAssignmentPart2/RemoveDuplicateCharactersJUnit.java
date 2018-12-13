@@ -7,10 +7,10 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class RemoveDuplicateCharactersJUnit {
+public class RemoveDuplicateCharactersJUnit {									 //JUnit Test class to test the cases
 
-	private RemoveDuplicateCharacter removeDuplicateCharacter;
-	@Before
+	private RemoveDuplicateCharacter removeDuplicateCharacter;					//  reference of class created
+	@Before																		// @Before as this runs before all the test cases	
 	public void setUp(){
 		
 		removeDuplicateCharacter = new RemoveDuplicateCharacter();

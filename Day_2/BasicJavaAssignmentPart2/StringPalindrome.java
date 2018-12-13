@@ -4,16 +4,22 @@ import java.util.Arrays;
 
 public class StringPalindrome {
 
-	public boolean checkPalindrome(String[] input) {
+	public boolean checkPalindrome(String input) {
 		
-		int stringLength = input.length;
+		System.out.println(input);
 		
+		char[] stringToCharArrayOne = input.toCharArray();		//converting the String into character array
+		int length= input.length();								//get the length of string
 		
-		for(int counter=0;counter<stringLength;counter++){
-			
-			
+		char[] reverseArray = new char[length];
+		
+		for(int countOne=0,countTwo=length-1;countOne<length && countTwo >= 0 ;countOne++,countTwo--)
+		{
+			reverseArray[countOne] = stringToCharArrayOne[countTwo];
 		}
-		return false;
+		boolean check = Arrays.equals(reverseArray,stringToCharArrayOne);
+		return check;
+
 
 		
 		

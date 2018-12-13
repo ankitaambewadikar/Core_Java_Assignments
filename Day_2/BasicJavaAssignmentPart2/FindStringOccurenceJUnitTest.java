@@ -9,15 +9,15 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class FindStringOccurenceJUnitTest {
+public class FindStringOccurenceJUnitTest {								 //JUnit Test class to test the cases
 	
-	private StringOccurence occurence;
-	@Before
+	private StringOccurence occurence;									//  refercnce of class created
+	@Before																// @Before as this runs before all the test cases	
 	public void setUp(){
 		occurence = new StringOccurence();
 	}
 	@Test
-	public void testFindOccurenceOfName() {
+	public void testFindOccurenceOfName() {								//test case for multiple occurence of string
 		
 		
 		String[] namesOne = {"Dave", "Ann", "George", "Sam", "Ted", "Gag", "Saj", "Agati", "Mary", "Sam", "Ayan", "Dev", "Kity", "Meery", "Smith", "Johnson", "Bill", "Williams", "Jones", "Brown", "Davis", "Miller", "Wilson", "Moore", "Taylor", "Anderson", "Thomas", "Jackson"};
@@ -26,14 +26,14 @@ public class FindStringOccurenceJUnitTest {
 		
 	}
 	@Test
-	public void testFindOccurence(){
+	public void testFindOccurence(){									//test case for single occurence
 		String[] namesTwo = {"Dave", "Ann", "George", "Sam", "Ted", "Gag", "Saj", "Agati", "Mary", "Sam", "Ayan", "Dev", "Kity", "Meery", "Smith", "Johnson", "Bill", "Williams", "Jones", "Brown", "Davis", "Miller", "Wilson", "Moore", "Taylor", "Anderson", "Thomas", "Jackson"};
 		int occurThree = occurence.checkString(namesTwo, "Davis");
 		assertEquals(1,occurThree);
 	}
 	
 	@Test
-	public void testFindOccurenceForEmptyString(){
+	public void testFindOccurenceForEmptyString(){						//test case for empty string
 		
 		String[] name ={};
 		int OccurTwo = occurence.checkString(name, "Ann");

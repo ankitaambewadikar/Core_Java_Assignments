@@ -7,7 +7,7 @@ public class StringOccurence {
 		int stringLength = names.length;
 		int occur=0;
 		String found=" ";		
-		for(int counter=0 ; counter < stringLength ; counter++){
+		for(int counter=0 ; counter < stringLength ; counter++){	//for counter to check occurence of string in the given string array
 			if(names[counter].equals(find)){
 				
 				//System.out.println("present");

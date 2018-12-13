@@ -1,22 +1,32 @@
 package day_2;
 
+import java.util.Arrays;
+
 public class ReduceExtraBlankSpace {
 
-	public String checkBlankSpace(String input) {
+	public String checkBlankSpace(String input, String string, int position) {		// class where the test caeses logic present
+						
+		String newInput = input.replaceAll("\\s+", " ");							//to remove all the extra spaces present in the string
+		System.out.println(newInput);
+		String[] newStringArray = newInput.split(" ");								//convert the String into string Array.
 		
-		String content = new String();
-		input = input.replaceAll("\\s+", " ");
-		System.out.println(input);
-		int pos;
-		content = input.replace("IS", "");
-		System.out.println(content);
-		//String one=removeCharAt(input,6);
-		int length = input.length();
-		System.out.println(length);
-		//for (int counter=6;counter<input.length() && input = "IS")
-		//System.out.println(one);
-		return null;
+		for(int counter = 0;counter < newStringArray.length;counter++){
+				
+			if(newStringArray[counter]== newStringArray[position]){
+				
+				newStringArray[counter] = newStringArray[counter].replaceAll(string, " ");//compare and replace the word at the position given
+			}
+		}
+		System.out.println(Arrays.toString(newStringArray));
+		
+		String result = " ";
+		String resultOne = String.join(result, newStringArray);				//convert the string Array to string
+		System.out.println(resultOne);
+
+		return resultOne;
 	}
+
+
 
 
 }

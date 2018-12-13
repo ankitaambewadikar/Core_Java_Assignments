@@ -5,7 +5,7 @@ public class MultiDimensionalArray {
 	public int checkElement(int[][] numberArray, int tofind) {
 		
 		int result=0;
-		for(int counterOne=1;counterOne<=3;counterOne++){
+		for(int counterOne=1;counterOne<=3;counterOne++){				//to find an element in the multidimensional array 
 			for(int counterTwo=counterOne;counterTwo<=2;counterTwo++){
 				
 				if(numberArray[counterOne][counterTwo] == tofind){

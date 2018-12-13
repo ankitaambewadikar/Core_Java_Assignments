@@ -4,15 +4,14 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class StringPalindromeJUnit {
+public class StringPalindromeJUnit {									 //JUnit Test class to test the cases
 
 	@Test
 	public void checkStringPalindrometest() {
-		StringPalindrome stringPalindrome = new StringPalindrome();
-		String[] input = {"nitin","ankita","malyalam","deepika"};
-		
-		boolean result = stringPalindrome.checkPalindrome(input);
-		//assertEquals();
+		StringPalindrome palindrome = new StringPalindrome();
+		String input = ("malayalam");
+		boolean result = palindrome.checkPalindrome(input);
+		assertTrue(result);
 	}
 
 }

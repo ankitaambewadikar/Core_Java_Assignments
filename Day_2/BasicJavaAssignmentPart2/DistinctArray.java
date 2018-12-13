@@ -8,7 +8,7 @@ public class DistinctArray {
 			int arrayLength = distinctArray.length;
 			//System.out.println(distinctArray);
 			
-	        total  = (arrayLength+1)*(arrayLength+2)/2;    
+	        total  = (arrayLength+1)*(arrayLength+2)/2;    		//to find the element missing in the given array
 	        for ( counter = 0; counter< arrayLength; counter++) 
 	        	total -= distinctArray[counter]; 
 	        System.out.println(total);

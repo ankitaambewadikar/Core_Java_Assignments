@@ -9,10 +9,10 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class MultiDimensionalArrayJUnitTest {
+public class MultiDimensionalArrayJUnitTest {							 //JUnit Test class to test the cases
 
-	private MultiDimensionalArray multiDimensionalArray;
-	@Before
+	private MultiDimensionalArray multiDimensionalArray;				//  reference of class created
+	@Before																// @Before as this runs before all the test cases	
 	public void setUp(){
 		multiDimensionalArray = new MultiDimensionalArray();
 	}

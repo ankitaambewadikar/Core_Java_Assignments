@@ -6,7 +6,7 @@ public class ReverseString {
 	public String reverseString(String inputString) {
 		
 		
-		String[] words = inputString.split(" ");
+		String[] words = inputString.split(" ");					//split() breaks a given string
 		String reversedString = " ";
 		for (int countOne = 0; countOne < words.length;countOne++)
 	        {
