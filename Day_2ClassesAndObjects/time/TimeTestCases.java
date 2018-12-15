@@ -1,3 +1,7 @@
+/*
+ * test Class to test the different test cases for getHour and getMinute separately
+ */
+
 package time;
 
 import static org.junit.Assert.*;

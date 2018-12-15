@@ -1,6 +1,7 @@
 /*
  * 
-Write the definition for a class called Time that has hours and minutes as integer. The class has the following behaviours/services/methods:
+Write the definition for a class called Time that has hours and minutes as integer. 
+The class has the following behaviours/services/methods:
 void setTime(int, int) to set the specified value in object
 void showTime() to display time object
 time sum(time) to sum two time object & return time
@@ -26,7 +27,7 @@ public class Time {
 		
 	}
 
-	public Time addTime(Time timeOne, Time timeTwo) {
+	public Time addTime(Time timeOne, Time timeTwo) {			//method to add two object values and store it in third object
 		
 		Time temp = new Time();
 		temp.hour = timeOne.hour + timeTwo.hour;

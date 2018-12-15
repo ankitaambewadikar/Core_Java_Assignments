@@ -1,5 +1,6 @@
 /*
- * Write the definition for a class called Complex that has floating point properties for storing real and imaginary parts. The class has the following 
+ * Write the definition for a class called Complex that has floating point properties for storing real 
+	and imaginary parts. The class has the following 
 behaviours/services/methods:
 void set(float, float) to set the specified value in object
 void disp() to display complex number object
@@ -23,7 +24,7 @@ public class Complex {
 		return imaginary;
 	}
 	
-	public void setData(float real,float imaginary){
+	public void setData(float real,float imaginary){							
 		
 		this.real=real;
 		this.imaginary=imaginary;
@@ -35,7 +36,7 @@ public class Complex {
 	}
 
 
-	public Complex sumation(Complex complexOne, Complex complexTwo) {
+	public Complex sumation(Complex complexOne, Complex complexTwo) {			//adding two complex class objects and storing it in third object
 	
 		Complex temp = new Complex();
 		temp.real = complexOne.real + complexTwo.real;

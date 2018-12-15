@@ -17,7 +17,7 @@ public class TimeTest {
 		timeThree = new Time();
 	}*/
 	@Test
-	public void main() {
+	public void main() {						//main function to create three time objects
 		Time timeOne = new Time();
 		Time timeTwo = new Time();
 		Time timeThree = new Time();
@@ -26,7 +26,7 @@ public class TimeTest {
 		timeOne.display();
 		timeTwo.set(12,40);
 		timeTwo.display();
-		timeThree.addTime(timeOne,timeTwo);
+		timeThree.addTime(timeOne,timeTwo);		//function to add two time value objects
 		
 		
 	}

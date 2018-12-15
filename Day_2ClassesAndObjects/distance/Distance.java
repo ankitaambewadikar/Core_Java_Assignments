@@ -1,5 +1,6 @@
 /*
- * Write the definition for a class called Distance that has properties feet as integer  and inches as float. The class has the following behaviours/services/methods:
+ * Write the definition for a class called Distance that has properties feet as integer  and inches as float.
+ The class has the following behaviours/services/methods:
 void set(int, float) to give value to object
 void disp() to display distance in feet and inches
 Distance add(Distance) to sum two distances & return distance
@@ -15,7 +16,7 @@ public class Distance {
 	private int feet;
 	private float inches;
 	
-	public void set(int feet, float inches) {
+	public void set(int feet, float inches) {					//set() function to set the valus of feet and inches
 		this.feet=feet;
 		this.inches=inches;	
 	}
@@ -26,12 +27,12 @@ public class Distance {
 	public float getInches(){
 		return inches;
 	}
-	public void display() {
+	public void display() {										//display() method
 		System.out.println(feet + " " + inches+ "'");
 		
 	}
 
-	public Distance add(Distance objectOne, Distance objectTwo) {
+	public Distance add(Distance objectOne, Distance objectTwo) {				//adding to distance objects and storing it in third object
 		
 		Distance temp = new Distance();
 		temp.feet = objectOne.feet + objectTwo.feet;

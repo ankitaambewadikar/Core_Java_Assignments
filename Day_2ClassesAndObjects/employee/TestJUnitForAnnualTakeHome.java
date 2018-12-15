@@ -5,10 +5,10 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestJUnitForAnnualTakeHome {
+public class TestJUnitForAnnualTakeHome {						//test class for testing the AnnualTakeHome
 
 	private Employee employee;
-	@Before
+	@Before														//this runs before all test cases as the object needed in all test cases
 	public void setUp(){
 		employee = new Employee();
 	}

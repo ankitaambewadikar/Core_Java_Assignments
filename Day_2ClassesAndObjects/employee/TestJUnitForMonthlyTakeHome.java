@@ -5,10 +5,10 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestJUnitForMonthlyTakeHome {
+public class TestJUnitForMonthlyTakeHome {						//test class for monthlyTakeHome
 
 	private Employee employee;
-	@Before
+	@Before														////this runs before all test cases as the object needed in all test cases
 	public void setUp(){
 		employee = new Employee();
 	}
@@ -17,7 +17,7 @@ public class TestJUnitForMonthlyTakeHome {
 		
 		employee.setMonthlyBasic(10000);
 		double monthlyTakeHome = employee.getMonthlyTakeHome();
-		assertEquals(16000,monthlyTakeHome,0.02);
+		assertEquals(16000,monthlyTakeHome,0.02);				//assert for checking double (expected,actual,delta)
 	}
 	@Test
 	public void testTwo() {

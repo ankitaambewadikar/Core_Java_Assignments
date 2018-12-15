@@ -6,9 +6,9 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestJUnitForMonthlyBasic {
+public class TestJUnitForMonthlyBasic {						//test class for testng the MonthlyBasic
 	private Employee employee;
-	@Before
+	@Before													//this runs before all test cases as the object needed in all test cases
 	public void setUp(){
 		employee = new Employee();
 	}

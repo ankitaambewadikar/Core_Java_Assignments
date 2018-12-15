@@ -1,3 +1,7 @@
+/*
+ * test class to test the addition of complex object and different test cases for getReal() value and getImaginary value
+ */
+
 package complex;
 
 import static org.junit.Assert.*;
@@ -27,7 +31,7 @@ public class ComplexTestCases {
 		complexTwo.setData(4, 3);
 		complexTwo.display();
 		Complex result = complexThree.sumation(complexOne, complexTwo);
-		assertEquals(9,result.getReal(),0.02);
+		assertEquals(9,result.getReal(),0.02);							//assert for testing the real value of complex numbers
 		
 	}
 	@Test
@@ -39,7 +43,7 @@ public class ComplexTestCases {
 		complexTwo.setData(4, 3);
 		complexTwo.display();
 		Complex result = complexThree.sumation(complexOne, complexTwo);
-		assertEquals(7,result.getImaginary(),0.02);
+		assertEquals(7,result.getImaginary(),0.02);						//assert for testing the imaginary value
 		
 	}
 	@Test

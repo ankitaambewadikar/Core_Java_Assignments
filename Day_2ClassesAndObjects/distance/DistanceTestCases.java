@@ -1,3 +1,5 @@
+/*test class to getFeet() and getInches() separately in different test cases*/
+
 package distance;
 
 import static org.junit.Assert.*;
@@ -36,7 +38,7 @@ public class DistanceTestCases {
 		distanceTwo.set(3,6);
 		distanceTwo.display();
 		Distance resultOne=distanceThree.add(distanceOne, distanceTwo);
-		assertEquals(3,resultOne.getInches(),0.02);
+		assertEquals(3,resultOne.getInches(),0.02);						//assertEquals() for getInchec()
 		
 	}
 	
