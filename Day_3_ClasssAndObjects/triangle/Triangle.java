@@ -25,7 +25,7 @@ public class Triangle {
 		this.sideThree = sideThree;
 		}
 	
-	public boolean isRightAngleTriangle(){
+	public boolean isRightAngleTriangle(){															//method to check the rightAngleTriangle
 		
 		int largestSide=0;
 		if(sideOne > sideTwo && sideOne > sideThree){
@@ -41,7 +41,7 @@ public class Triangle {
 			return(largestSide*largestSide == sideOne*sideOne + sideTwo*sideTwo) ? true : false;
 		}
 	
-	public boolean isScaleneTriangle(){
+	public boolean isScaleneTriangle(){															//method to check scalene triangle
 		if(sideOne != sideTwo && sideOne != sideThree  && sideTwo != sideThree){
 			return true;
 			
@@ -50,7 +50,7 @@ public class Triangle {
 			return false;
 		
 	}
-	public boolean isEquilateralTriangle(){
+	public boolean isEquilateralTriangle(){														//method to check Equilateral triangle
 		if(sideOne == sideTwo && sideTwo == sideThree && sideOne == sideThree){
 			return true;
 		}
@@ -58,7 +58,7 @@ public class Triangle {
 			return false;
 		
 	}
-	public boolean isIsocelesTriangle(){
+	public boolean isIsocelesTriangle(){														//method to check Isoceles triangle
 		if(sideOne == sideTwo || sideTwo == sideThree || sideOne == sideThree){
 			return true;
 		}

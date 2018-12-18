@@ -1,3 +1,7 @@
+/*
+ * 
+ */
+
 package triangle;
 
 import static org.junit.Assert.*;
