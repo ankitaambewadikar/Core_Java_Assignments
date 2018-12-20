@@ -2,8 +2,10 @@ package com.advancedInheritanceAssignment;
 
 public  abstract class BankFactory {
 	
-	public abstract void getNewSavingAccount();
+	public abstract SavingAccount getNewSavingAccount(String accountHolderName, double accountBalance, boolean isSalaried);
 	
-	public abstract void getNewCurrentAccount();
+	public abstract CurrentAccount getNewCurrentAccount(String accountHolderName, double accountBalance);
+
+
 
 }

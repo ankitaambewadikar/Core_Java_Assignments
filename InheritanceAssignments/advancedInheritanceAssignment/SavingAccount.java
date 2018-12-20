@@ -3,17 +3,17 @@ package com.advancedInheritanceAssignment;
 public abstract class  SavingAccount extends BankAccount {
 	
 	private boolean isSalaried;
-	static final  float MINBAL=1000;
+	private static final float  MINBAL=1000;
 
 	
-	public SavingAccount(int accountNumber, String accountHolderName,
+	public SavingAccount(String accountHolderName,
 			double accountBalance,boolean isSalaried) 
 	{
-		super(accountNumber, accountHolderName, accountBalance);
+		super( accountHolderName, accountBalance);
 		this.isSalaried = isSalaried;
 		
 	}
-	public abstract double withdraw(float amount);
+	public abstract void withdraw(float amount) throws InsufficientException;
 		
 	
 

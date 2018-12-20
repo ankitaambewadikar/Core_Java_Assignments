@@ -2,15 +2,21 @@ package com.advancedInheritanceAssignment;
 
 public abstract class CurrentAccount extends BankAccount {
 	
-	private final double creditLimit;
+	protected final double creditLimit=500;
 	
-	public CurrentAccount(int accountNumber, String accountHolderName,
-			double accountBalance,double creditLimit) {
-		super(accountNumber, accountHolderName, accountBalance);
-		this.creditLimit=creditLimit;
+	@Override
+	public String toString() {
+		return "CurrentAccount [creditLimit=" + creditLimit + ", toString()="
+				+ super.toString() + "]";
+	}
+
+	public CurrentAccount( String accountHolderName,
+			double accountBalance) {
+		super( accountHolderName, accountBalance);
+		
 		
 	}
 
-	public abstract double withdraw(float amount);
+	public abstract void withdraw(float amount) throws InsufficientException;
 
 }
