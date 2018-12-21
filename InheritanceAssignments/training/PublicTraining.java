@@ -1,5 +1,5 @@
-package classJava;
-import test.TestTraining;											//importing test class package
+package com.training;
+import com.testTraining.TestTraining;
 
 public class PublicTraining extends Training {
 

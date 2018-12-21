@@ -1,4 +1,4 @@
-package classJava;
+package com.training;
 
 public class CorporateTraining extends Training {
 

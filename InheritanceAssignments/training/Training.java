@@ -4,8 +4,8 @@
  * and implement the overridden method
  */
 
-package classJava;														
-import test.TestTraining;										//importing test class package
+package com.training;														
+import com.testTraining.TestTraining;
 
 public abstract class Training {
 

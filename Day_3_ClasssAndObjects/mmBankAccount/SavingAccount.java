@@ -26,8 +26,8 @@ public class SavingAccount {
 	}
 
 
-	public double depositAmount(double depositAmount) {					//deposit method
-		return (this.accountBalance += depositAmount);
+	public void depositAmount(double depositAmount) {					//deposit method
+		this.accountBalance += depositAmount;
 		
 	}
 
@@ -59,7 +59,7 @@ public class SavingAccount {
  * withdraw and deposit method
  */
 	
-	public static void main(String[] args){
+	/*public static void main(String[] args){
 			//objectOne 
 				SavingAccount savingAccountOne = new SavingAccount("ankita",5000);
 				savingAccountOne.depositAmount(1000);
@@ -75,7 +75,7 @@ public class SavingAccount {
 				SavingAccount savingAccountThree= new SavingAccount("ankit");
 				System.out.println(savingAccountThree);
 				SavingAccount.getNextAccountNumber();
-	}
+	}*/
 
 	
 }

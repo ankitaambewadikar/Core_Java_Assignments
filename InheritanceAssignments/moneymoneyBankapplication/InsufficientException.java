@@ -1,4 +1,4 @@
-package com.advancedInheritanceAssignment;
+package com.moneymoneyBankapplication;
 
 public class InsufficientException extends Exception {
 

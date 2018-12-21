@@ -1,11 +1,11 @@
-package test;
+package com.testTraining;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import classJava.CorporateTraining;
-import classJava.PublicTraining;
-import classJava.Training;
+import com.training.CorporateTraining;
+import com.training.PublicTraining;
+import com.training.Training;
 
 public class TestTraining {
 
