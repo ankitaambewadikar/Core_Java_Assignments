@@ -10,6 +10,9 @@ public class CorporateTraining extends Training {
 	
 	}
 
+	/**
+	 * method overrided from the training class to find the total fees for corporate training by course Id fees* no of days
+	 */
 	@Override
 	public double getOrderValue() {
 		

@@ -1,12 +1,13 @@
-/**
- * Training is an abstract class where there an abstract method getOrderValue()
- * here to classes PublicTraining and CorporateTraining extend Class Training 
- * and implement the overridden method
- */
 
 package com.training;														
 import com.testTraining.TestTraining;
-
+/**
+ * 
+ * @author aambewad
+ * * Training is an abstract class where there an abstract method getOrderValue()
+ * here to classes PublicTraining and CorporateTraining extend Class Training 
+ * and implement the overridden method
+ */
 public abstract class Training {
 
 	private int id;

@@ -6,7 +6,12 @@ import org.junit.Test;
 import com.training.CorporateTraining;
 import com.training.PublicTraining;
 import com.training.Training;
-
+/**
+ * 
+ * @author aambewad
+ * TestTraining junit test class for testing the Public Training and Corporate training classes
+ *
+ */
 public class TestTraining {
 
 	@Test

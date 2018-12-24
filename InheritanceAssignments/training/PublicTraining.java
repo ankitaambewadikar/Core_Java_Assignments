@@ -1,6 +1,11 @@
 package com.training;
 import com.testTraining.TestTraining;
-
+/**
+ * 
+ * @author aambewad
+ * class PublicTraining extends the abstract class training and also overides the getOrderVlaue abstract method
+ *
+ */
 public class PublicTraining extends Training {
 
 	private int participants;
@@ -9,8 +14,11 @@ public class PublicTraining extends Training {
 		super( subject, fees);											//to call the parent constructor
 		this.participants = participants;
 	}
+/**
+ * 	 * method overrided from the training class to find the total fees for public training by course Id fees* no of participants
 
-	@Override														//method overriding
+ */
+	@Override														
 	public double getOrderValue() {
 	
 		return (fees * participants);
