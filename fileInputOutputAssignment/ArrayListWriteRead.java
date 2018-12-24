@@ -7,25 +7,29 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.ArrayList;
 
-public class EmployeeWriteReadFile {
+public class ArrayListWriteRead {
 
-	public void writeInFile(Employee employee, String path) throws IOException {
+	public void writeArrayInFile(String path, ArrayList<MyClass> list) throws Exception {
+		
 		FileOutputStream fileOutputStream = new FileOutputStream(path);
 		ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
 
-		objectOutputStream.writeObject(employee);
+		objectOutputStream.writeObject(list);
 		objectOutputStream.close();
 		fileOutputStream.close();
 	}
 
-	public Employee readFile(String path) throws Exception {
-		Employee employee = null;
+	public ArrayList<MyClass> readArrayListFromFile(String path) throws Exception {
+		
+		ArrayList<MyClass>  readFile = null;
 		if (new File(path).exists()) {
 			
 			FileInputStream fileInputstream = new FileInputStream(path);
 			ObjectInputStream objectInputStream = new ObjectInputStream(fileInputstream);
-			employee = (Employee) objectInputStream.readObject();
+			readFile = (ArrayList<MyClass>) objectInputStream.readObject();
+			
 			fileInputstream.close();
 			objectInputStream.close();
 			
@@ -34,8 +38,8 @@ public class EmployeeWriteReadFile {
 		} else
 			throw new Exception();
 
-		return employee;
-
+		return readFile;
 	}
+	
 
 }
