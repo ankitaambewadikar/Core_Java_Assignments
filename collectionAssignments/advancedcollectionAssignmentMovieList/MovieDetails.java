@@ -8,12 +8,20 @@ b.	Movie_DetailsList class should have method add_movie(), remove_movie(), remov
 c.	Movie_DetailsList should have method which will take an argument that will be use to determine on which to sort 
 
  */
-public class MovieDetails {
+public class MovieDetails   {
 
 	private String movieName;
 	private String leadActor;
 	private String leadActress;
 	private String movieGenre;
+	/**
+	 * 
+	 * @param movieName
+	 * @param leadActor
+	 * @param leadActress
+	 * @param movieGenre
+	 * Constructor used to initialize the instance members
+	 */
 	public MovieDetails(String movieName, String leadActor, String leadActress,
 			String movieGenre) {
 		this.movieName = movieName;
@@ -51,11 +59,7 @@ public class MovieDetails {
 	public void setMovieGenre(String movieGenre) {
 		this.movieGenre = movieGenre;
 	}
-	/*@Override
-	public int compareTo(MovieDetails objectMovie) {
-		
-		MovieDetails details = (MovieDetails)objectMovie;
-		return this.movieName.compareTo(objectMovie.movieName) ;
-	}*/
+
+
 	
 }
